@@ -1,0 +1,14 @@
+.code {
+  position: absolute;
+  line-height: 1;
+  background-color: rgba(127, 255, 0, .7);
+  cursor: pointer;
+  user-select: none;
+  
+  &:hover {
+    background-color: rgba(127, 127, 255, 1);
+  }
+  &:active {
+    background-color: red;
+  }
+}

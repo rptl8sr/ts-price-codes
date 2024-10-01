@@ -1,0 +1,32 @@
+@use '../../styles/vars' as v;
+
+.mainlayout {
+  
+  & .nav {
+    @include v.box-shadow;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    text-align: center;
+    width: 1080px;
+    
+    & button {
+      margin: 6px 20px;
+    }
+    
+    & > div {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      font-size: 10px;
+      color: #aaa;
+      margin: 6px;
+    }
+    
+    & ~ div {
+      margin-top: 46px;
+    }
+  }
+}
