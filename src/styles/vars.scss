@@ -1,0 +1,16 @@
+$color-white: #F6F6F6;
+$color-deep-black: #202020;
+$color-black: #363636;
+$color-dark-grey: #363636;
+$color-text: #606060;
+$color-grey: #6A6A6A;
+$color-light-grey: #C4C4C4;
+$color-accent: #0969DF;
+$color-error: #df3409;
+
+$outline: false;
+
+@mixin box-shadow {
+  box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.10);
+  -webkit-appearance: none;
+}

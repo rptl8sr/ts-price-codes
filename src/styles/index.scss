@@ -1,0 +1,57 @@
+@use 'vars' as v;
+
+@import 'normalize';
+
+// outlines
+@if v.$outline {
+  * {
+    outline: 1px red solid;
+  }
+}
+
+// main
+@font-face {
+  font-family: 'CeraCondensedCY Black';
+  src:
+    local('CeraCondensedCY Black'),
+    local('CeraCondensedCY-Black'),
+    url('../assets/fonts/CeraCondensedCY-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  font-size: 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+html {
+  width: 1080px;
+}
+
+body {
+  font-size: 27px;
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
