@@ -15,7 +15,8 @@
   src:
     local('CeraCondensedCY Black'),
     local('CeraCondensedCY-Black'),
-    url('../assets/fonts/CeraCondensedCY-Black.otf') format('opentype');
+    url('/public/assets/fonts/CeraCondensedCY-Black.ttf') format('truetype'),
+    url('/public/assets/fonts/CeraCondensedCY-Black.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
 }

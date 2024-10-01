@@ -6,6 +6,7 @@ import NavButton from '../../components/nav-button';
 import {Pages} from '../../routes/routes.ts';
 
 import styles from './main-layout.module.scss';
+import BuildTime from '../../build-time';
 
 
 interface IMainLayoutProps {
@@ -19,6 +20,7 @@ export const MainLayout: React.FC<IMainLayoutProps> = () => {
   return (
     <div className={clsx(styles.mainlayout)}>
       <div className={clsx(styles.nav)}>
+        <BuildTime />
         <NavButton text='Стандарт' onClick={() => navigate(Pages.standart)} disabled={location.pathname === Pages.standart} />
         <NavButton text='Смартбокс' onClick={() => navigate(Pages.smarbox)} disabled={location.pathname === Pages.smarbox}/>
       </div>

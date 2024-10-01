@@ -1,5 +1,5 @@
-const baseImgPath = '/src/assets/img/';
-const baseDataPath = '/src/assets/data/';
+const baseImgPath = '/assets/img/';
+const baseDataPath = '/assets/data/';
 
 enum Background {
   standard = `${baseImgPath}241008_KFC_con_msh_Price.png`,
