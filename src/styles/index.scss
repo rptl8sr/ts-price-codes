@@ -10,15 +10,24 @@
 }
 
 // main
+@supports (-webkit-appearance: none) {
+  @font-face {
+    font-family: 'CeraCondensedCY-Black';
+    src:
+      url('/public/assets/fonts/CeraCondensedCY-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
 @font-face {
-  font-family: 'CeraCondensedCY Black';
+  font-family: 'CeraCondensedCY-Black';
   src:
-    local('CeraCondensedCY Black'),
-    local('CeraCondensedCY-Black'),
-    url('/public/assets/fonts/CeraCondensedCY-Black.ttf') format('truetype'),
-    url('/public/assets/fonts/CeraCondensedCY-Black.woff2') format('woff2');
+    url('/public/assets/fonts/CeraCondensedCY-Black.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 
