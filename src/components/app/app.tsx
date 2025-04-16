@@ -13,11 +13,16 @@ interface IAppProps {
 }
 
 export const App: React.FC<IAppProps> = () => {
+  console.log(`App version: ${__APP_VERSION__}`);
+  
   return (
     <ChakraProvider>
-      <div className={clsx(styles.app)}>
-        <Toaster />
-        <Outlet />
+      <div className={ clsx(styles.app) }>
+        <Toaster/>
+        <Outlet/>
+        <footer className={ clsx(styles.footer) }>
+          <small>Версия приложения: { __APP_VERSION__ }</small>
+        </footer>
       </div>
     </ChakraProvider>
   );

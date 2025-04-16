@@ -12,7 +12,7 @@ interface ICodeProps {
 }
 
 export const Code: React.FC<ICodeProps> = ({item}) => {
-  const width = 50;
+  const width = 62;
   
   const dynamicStyle = {
     top: `${item.anchorY}px`,

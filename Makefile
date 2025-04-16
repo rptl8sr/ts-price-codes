@@ -1,9 +1,10 @@
+.PHONY: git-checkout git-init deploy
+
 PROJECT := "ts-price-codes"
 V := "0.0.1"
 USER := rptl8sr
 EMAIL := $(USER)@gmail.com
 
-.PHONY: git-init
 git-init:
 	gh repo create $(PROJECT) --private
 	git init
@@ -18,7 +19,11 @@ git-init:
 
 BN ?= dev
 # make git-checkout BN=dev
-.PHONY: git-checkout
 git-checkout:
 	git checkout -b $(BN)
+
+
+deploy:
+	firebase deploy
+
 
