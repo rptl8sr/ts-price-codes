@@ -22,7 +22,6 @@ BN ?= dev
 git-checkout:
 	git checkout -b $(BN)
 
-
 deploy:
 	firebase deploy
 
